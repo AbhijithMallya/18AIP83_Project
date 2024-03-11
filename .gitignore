@@ -1,7 +1,9 @@
 .ipynb_checkpoints
 caption_saved_model
-FLicker8k_Dataset
+Images
+
 venv
 *.txt
 !caption_weights.txt
 *.h5
+*.pkl

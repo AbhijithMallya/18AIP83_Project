@@ -1,3 +1,0 @@
-Replace this file with caption_weights.h5
-
-I have not put in git as 50Mb is the file limit
