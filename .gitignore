@@ -1,0 +1,8 @@
+.ipynb_checkpoints
+caption_saved_model
+FLicker8k_Dataset
+venv
+*.txt
+!caption_weights.txt
+*.md
+*.h5
