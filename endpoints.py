@@ -37,3 +37,9 @@ async def create_upload_file(file: UploadFile):
     #Actual return function as below
     #result = answer given by the model
     #return {"caption" : result}
+
+
+
+
+
+#Running Command in terminal -->  uvicorn endpoints:app --reload
