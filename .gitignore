@@ -4,6 +4,8 @@ Images
 __pycache__
 venv
 *.txt
+!best_model.txt
+!features.txt
 !caption_weights.txt
 *.h5
 *.pkl
