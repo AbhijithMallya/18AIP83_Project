@@ -9,3 +9,4 @@ venv
 !caption_weights.txt
 *.h5
 *.pkl
+!captions.txt
