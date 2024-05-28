@@ -1,0 +1,5 @@
+venv
+__pycache__
+Images
+.ipynb_checkpoints
+modelTraining.ipynb

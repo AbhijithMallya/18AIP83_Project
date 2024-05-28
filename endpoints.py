@@ -9,7 +9,7 @@ from captionGenerator import predict_caption
 from PIL import Image
 import numpy as np
 import io
-
+from fastapi.middleware.cors import CORSMiddleware
 model = get_caption_model()
 
 vgg_model = VGG16()
@@ -20,7 +20,16 @@ tokenizer , max_length = get_token_maxlen()
 
 
 #Initialising FastApi Server
+
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["*"],
+)
 
 
 #Ignore this

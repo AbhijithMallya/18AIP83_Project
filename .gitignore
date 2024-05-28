@@ -10,3 +10,4 @@ venv
 *.h5
 *.pkl
 !captions.txt
+front.html
