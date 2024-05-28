@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Image Captioning</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+                <h1>Image Caption Generator</h1>
+            </div>
+            <ul>
+                <li><a href="#about">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="image-processing"> 
+        <h1 class="animated-name">Hearing the Images </h1>
+        <div id="center-content">
+        <form id="uploadForm" enctype="multipart/form-data">
+          <input type="file" id="imageInput" name="file" onchange="previewImage(event)">
+          <button type="button" onclick="uploadImage()">Generate caption</button>
+        </form>
+            <!-- <div id="confirmation-message" class="confirmation-message"> -->
+            <!-- </div> -->
+        <!-- Image Preview Container -->
+    <div id="imagePreviewContainer">
+      <h3>Uploaded image</h3>
+      <img id="imagePreview"  style="max-width: 300px; max-height: 300px;">
+      <div id="captionDisplay"></div> <!-- Caption Display -->
+      <button onclick="convertToAudio()"></button> <!-- Button to read out the text -->
+    </div>
+    <!-- Chat Box for Displaying Captions -->
+    <div id="chatBox">
+      <span id="response"></span>
+    </div>
+</div>
+    </section>
+    <section id="about">
+        <h1 class="stylish-h1">About Us</h1>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="Manjunath_EC.jpg" alt="Project Guide">
+                <h2>Manjunath E C</h2>
+            </div>
+            <div class="team-member">
+                <img src="Abhijith.jpg" alt="Team member 1">
+                <h2>Abhijith Mallya</h2>
+            </div>
+            <div class="team-member">
+                <img src="profile.jpg" alt="Team member 2">
+                <h2>Hithesh Shetty</h2>
+            </div>
+            <div class="team-member">
+                <img src="Irshad.jpg" alt="Team member 3">
+                <h2>Mohammed Irshad</h2>
+            </div>
+            <div class="team-member">
+                <img src="zain.jpg" alt="Team member 4">
+                <h2>Muhammed Zainuddin Moosa</h2>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Project Demo Website. All Rights Reserved.</p> 
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
