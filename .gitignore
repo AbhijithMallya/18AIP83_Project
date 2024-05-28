@@ -11,3 +11,4 @@ venv
 *.pkl
 !captions.txt
 front.html
+!requirements.txt

@@ -1,0 +1,9 @@
+fastapi
+h5py
+keras==2.10.0
+matplotlib
+numpy
+pillow
+tensorflow==2.10.0
+uvicorn
+tqdm
